@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoiceTranslation"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Spinner
+        android:id="@+id/speech_spinner"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="225dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <Button
+            android:id="@+id/speech_button"
+            android:layout_height="125dp"
+            android:layout_width="125dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/speak"
+            android:layout_marginEnd="15dp"
+            android:onClick="speech_button" />
+
+        <TextView
+            android:id="@+id/speech_textview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="@string/voice_translation.speech_textview_text"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/textview"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/listen_spinner"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="225dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <Button
+            android:id="@+id/listen_button"
+            android:layout_height="125dp"
+            android:layout_width="125dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/listen"
+            android:layout_marginEnd="15dp"
+            android:onClick="listen_button" />
+
+        <TextView
+            android:id="@+id/listen_textview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="@string/voice_translation.listen_textview_text"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/textview"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/translate_button"
+        android:layout_height="125dp"
+        android:layout_width="125dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/translate"
+        android:onClick="translate" />
+
+</LinearLayout>

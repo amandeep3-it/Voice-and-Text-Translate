@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextTranslation"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Spinner
+        android:id="@+id/write_spinner"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <EditText
+        android:id="@+id/write_edittext"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:inputType="text"
+        android:textSize="25sp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:labelFor="@id/write_edittext"
+        android:autofillHints="write" />
+
+    <Spinner
+        android:id="@+id/read_spinner"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <Button
+        android:layout_height="169dp"
+        android:layout_width="186dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/translate"
+        android:layout_marginTop="30dp"
+        android:onClick="translate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/text_translation.textview_text"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/read_textview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/text_translation.read_textview_text"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"
+        android:background="@drawable/textview"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"/>
+
+</LinearLayout>

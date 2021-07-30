@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VT Translate</string>
+    <string name="google_api_url">https://translation.googleapis.com/language/translate/v2?key=AIzaSyDXV97Bzdj5HcCuEE_O6I4JHdipmKNCScs</string>
+
+    <string name="main_activity.button_1_text">Voice Translation</string>
+    <string name="main_activity.button_2_text">Text Translation</string>
+
+    <string name="text_translation.textview_text">Translate</string>
+    <string name="text_translation.read_textview_text">Read Text View</string>
+
+    <string name="voice_translation.speech_textview_text">Voice Text View</string>
+    <string name="voice_translation.listen_textview_text">Speak Text View</string>
+</resources>
