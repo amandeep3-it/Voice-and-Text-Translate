@@ -36,11 +36,11 @@ public class TextTranslation extends Activity {
     }
 
     private boolean translate_ALLOW = true;
-    public synchronized void translate(View v) {
+    public synchronized void translate(final View v) {
         if (!this.translate_ALLOW) return;
         this.translate_ALLOW = false;
 
-        int i1 = this.write_spinner.getSelectedItemPosition(), i2 = this.read_spinner.getSelectedItemPosition();
+        final int i1 = this.write_spinner.getSelectedItemPosition(), i2 = this.read_spinner.getSelectedItemPosition();
 
         new Thread() {
             @Override

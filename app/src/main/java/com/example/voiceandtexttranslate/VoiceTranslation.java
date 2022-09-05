@@ -1,18 +1,18 @@
 package com.example.voiceandtexttranslate;
 
+import java.util.Locale;
+
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 import android.content.Intent;
+import android.os.Bundle;
+
+import android.speech.RecognizerIntent;
+import android.speech.tts.TextToSpeech;
 
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
-
-import android.speech.RecognizerIntent;
-import android.speech.tts.TextToSpeech;
-
-import java.util.Locale;
 
 public class VoiceTranslation extends AppCompatActivity {
     private final Main main = new Main();
@@ -51,7 +51,6 @@ public class VoiceTranslation extends AppCompatActivity {
                 }
             }
         });
-        this.listen_textview.setText("YO WHATS UP");
 //        (int status) -> this.text_to_speech.setLanguage(new Locale(this.main.languages[0].id, this.main.languages[0].country)));
     }
 
@@ -86,11 +85,11 @@ public class VoiceTranslation extends AppCompatActivity {
     }
 
     private boolean translate_ALLOW = true;
-    public synchronized void translate(View v) {
+    public synchronized void translate(final View v) {
         if (!this.translate_ALLOW) return;
         this.translate_ALLOW = false;
 
-        int i1 = this.speech_spinner.getSelectedItemPosition(), i2 = this.listen_spinner.getSelectedItemPosition();
+        final int i1 = this.speech_spinner.getSelectedItemPosition(), i2 = this.listen_spinner.getSelectedItemPosition();
 
         new Thread() {
             @Override
